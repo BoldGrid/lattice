@@ -9,7 +9,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: boldgrid-lattice
 Template: prime
-Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-421142
+Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-49
 */
 
 /*------------------------------------------------------------------------
@@ -283,6 +283,11 @@ textarea {
 label {
 	font-weight: 400;
 }
+hr {
+	border-width: 2px 0 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
 
 .nav > li > a:hover,
 .nav > li > a:focus,
@@ -293,12 +298,6 @@ label {
 }
 .table-striped > tbody > tr:nth-child(2n+1) {
 	border: none;
-}
-
-hr {
-	border-width: 2px 0 0;
-	margin-bottom: 10px;
-	margin-top: 10px;
 }
 
 /*------------------------------------------------------------------------
@@ -453,8 +452,8 @@ hr {
 -----------------------------------------------*/
 blockquote,
 .mod-blockquote {
-	padding-top: 0;
 	padding-bottom: 0;
+	padding-top: 0;
 }
 blockquote p,
 .mod-blockquote p {
@@ -487,10 +486,7 @@ blockquote p,
 	text-align: center;
 }
 .search .search-results .row {
-	margin-bottom: 15px;
-	margin-left: 0;
-	margin-right: 0;
-	margin-top: 15px;
+	margin: 15px 0;
 	text-align: center;
 }
 .search-results .row .col-md-12 hr {
@@ -594,8 +590,21 @@ h1.product_title {
 	margin-top: 30px;
 }
 aside.sidebar h2.widget-title {
-	border-bottom: 2px solid transparent !important;
 	text-align: left;
+}
+.price_slider {
+	margin-top: 20px;
+}
+.woocommerce nav.woocommerce-pagination ul {
+	border: none;
+}
+.woocommerce nav.woocommerce-pagination ul li {
+	border-right: none;
+}
+.woocommerce nav.woocommerce-pagination ul li a:focus, 
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+	background: transparent;
 }
 
 /*------------------------------------------------------------------------
@@ -616,12 +625,10 @@ aside.sidebar h2.widget-title {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
-
 #footer-widget-area {
 	margin-bottom: 15px;
 	padding-top: 15px;
 }
-
 #footer-center-menu {
 	padding-top: 15px;
 }

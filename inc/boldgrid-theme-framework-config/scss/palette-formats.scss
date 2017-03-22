@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------------
 # Variables
 ------------------------------------------------------------------------*/
-$rgba_4 : rgba($palette-primary_4, 0.8);
+$rgba_6 : rgba($palette-primary_6, 0.8);
 
 /*------------------------------------------------------------------------
 # Palettes
@@ -11,55 +11,6 @@ $rgba_4 : rgba($palette-primary_4, 0.8);
 	/*-----------------------------------------------
 	## 1
 	-----------------------------------------------*/
-	.navbar-default .navbar-toggle,
-	.navbar-default .navbar-toggle:focus,
-	.navbar-default .navbar-toggle:hover {
-		background-color: $palette-primary_1;
-	}
-	.alert-info {
-		border-color: $palette-primary_1;
-	}
-	a:hover,
-	a:focus,
-	.navbar-default .navbar-nav > li > a:hover,
-	.navbar-default .navbar-nav > li > a:focus,	
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
-	.navbar-default .navbar-nav > .current-menu-parent > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
-	.secondary-menu li a:hover,
-	.secondary-menu li.menu-social a:hover,
-	.tertiary-menu li a:hover,
-	.widget.well a:hover,
-	.link-primary:hover,
-	.link-primary:focus,
-	.link-secondary,
-	.site-footer a:hover,
-	.site-footer a:focus,
-	.attribution a:hover,
-	.attribution a:focus {
-		color: $palette-primary_1;
-	}
-	.button-primary:hover,
-	.button-primary:focus,
-	.button-secondary,
-	.ninja-forms-field.btn:hover,
-	.ninja-forms-field.btn:focus,
-	.form-submit .submit:hover,
-	.form-submit .submit:focus,
-	.alert-info,
-	.pager li > a:hover,
-	.pager li > a:focus,
-	.label-success {
-		background: $palette-primary_1;
-		color: $text-contrast-palette-primary_1;
-	}
-
-	/*-----------------------------------------------
-	## 2
-	-----------------------------------------------*/
 	.button-primary,
 	.button-secondary:hover,
 	.button-secondary:focus,
@@ -67,8 +18,8 @@ $rgba_4 : rgba($palette-primary_4, 0.8);
 	.form-submit .submit,
 	.ninja-forms-field.btn,
 	.pager li > a {
-		background: $palette-primary_2;
-		color: $text-contrast-palette-primary_2;
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
 	}
 	a,
 	.link-primary,
@@ -92,18 +43,18 @@ $rgba_4 : rgba($palette-primary_4, 0.8);
 	.attribution a,
 	.disabled-footer .site-footer a,
 	.widget.well caption {
-		color: $palette-primary_2;
+		color: $palette-primary_1;
 	}
 	hr {
-		border-color: $palette-primary_2;
+		border-color: $palette-primary_1;
 	}
 	article.post h1.entry-title,
 	h2 {
-		border-bottom: 2px solid $palette-primary_2;
+		border-bottom: 2px solid $palette-primary_1;
 	}
 	.mod-blockquote,
 	blockquote {
-		border-left: 4px solid $palette-primary_2;
+		border-left: 4px solid $palette-primary_1;
 	}
 	.table > tbody > tr > td,
 	.table > tbody > tr > th,
@@ -111,11 +62,60 @@ $rgba_4 : rgba($palette-primary_4, 0.8);
 	.table > tfoot > tr > th,
 	.table > thead > tr > td,
 	.table > thead > tr > th {
-		border-top: 1px solid $palette-primary_2;
+		border-top: 1px solid $palette-primary_1;
 	}
 	.table > thead > tr > th {
-		border-bottom: 2px solid $palette-primary_2;
+		border-bottom: 2px solid $palette-primary_1;
 	}
+
+	/*-----------------------------------------------
+	## 2
+	-----------------------------------------------*/
+	.navbar-default .navbar-toggle,
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle:hover {
+		background-color: $palette-primary_2;
+	}
+	.alert-info {
+		border-color: $palette-primary_2;
+	}
+	a:hover,
+	a:focus,
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus,	
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+	.navbar-default .navbar-nav > .current-menu-parent > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+	.secondary-menu li a:hover,
+	.secondary-menu li.menu-social a:hover,
+	.tertiary-menu li a:hover,
+	.widget.well a:hover,
+	.link-primary:hover,
+	.link-primary:focus,
+	.link-secondary,
+	.site-footer a:hover,
+	.site-footer a:focus,
+	.attribution a:hover,
+	.attribution a:focus {
+		color: $palette-primary_2;
+	}
+	.button-primary:hover,
+	.button-primary:focus,
+	.button-secondary,
+	.ninja-forms-field.btn:hover,
+	.ninja-forms-field.btn:focus,
+	.form-submit .submit:hover,
+	.form-submit .submit:focus,
+	.alert-info,
+	.pager li > a:hover,
+	.pager li > a:focus,
+	.label-success {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}	
 
 	/*-----------------------------------------------
 	## 3
@@ -134,42 +134,6 @@ $rgba_4 : rgba($palette-primary_4, 0.8);
 
 	/*-----------------------------------------------
 	## 4
-	-----------------------------------------------*/
-	.boldgrid-section .container,
-	.entry-header .container,
-	.entry-content .container,
-	#header-widget-area,
-	#footer-widget-area {
-		background: $rgba_4;
-	}
-	.jumbotron .container {
-		background-color: $rgba_4;
-	}
-	body,
-	p,
-	.site-content,
-	.jumbotron  {
-		color: $text-contrast-palette-primary_4;
-	}
-
-	/*-----------------------------------------------
-	## 5
-	-----------------------------------------------*/
-	.site-header,
-	.site-header p,
-	.widget.well,
-	.navbar-default .navbar-nav > li > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
-	.secondary-menu li a,
-	.tertiary-menu li a,
-	.footer-center-items li a,
-	.site-footer,
-	.site-footer p {
-		color: $palette-primary_5;
-	}
-
-	/*-----------------------------------------------
-	## 6
 	-----------------------------------------------*/	
 	.site-header .header-1,
 	.site-header .header-2.header-3.header-4,
@@ -191,30 +155,72 @@ $rgba_4 : rgba($palette-primary_4, 0.8);
 	.site-footer .footer-1,
 	.site-footer .footer-11,
 	.dropdown-menu {
-		background: $palette-primary_6;
+		background: $palette-primary_4;
 	}
+
+	/*-----------------------------------------------
+	## 5
+	-----------------------------------------------*/
+	.site-header,
+	.site-header p,
+	.widget.well,
+	.navbar-default .navbar-nav > li > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+	.secondary-menu li a,
+	.tertiary-menu li a,
+	.footer-center-items li a,
+	.site-footer,
+	.site-footer p {
+		color: $palette-primary_5;
+	}
+
+	/*-----------------------------------------------
+	## 6
+	-----------------------------------------------*/
+	.boldgrid-section .container,
+	.entry-header .container,
+	.entry-content .container,
+	#header-widget-area,
+	#footer-widget-area {
+		background: $rgba_6;
+	}
+	.jumbotron .container {
+		background-color: $rgba_6;
+	}
+	body,
+	p,
+	.site-content,
+	.jumbotron  {
+		color: $text-contrast-palette-primary_6;
+	}	
 }
 
 /*------------------------------------------------------------------------
 # Additional Body Classes
 ------------------------------------------------------------------------*/
+.palette-primary.woocommerce nav.woocommerce-pagination ul li span.current,
+.palette-primary.woocommerce nav.woocommerce-pagination ul li a:focus, 
+.palette-primary.woocommerce nav.woocommerce-pagination ul li a:hover,
+.palette-primary.woocommerce div.product .stock {
+	color: $palette-primary_2;
+}
+
+.palette-primary.search .jumbotron,
+.palette-primary.search .search-results .col-md-12 {
+	background: $palette-primary_3;
+}
 .palette-primary.woocommerce-page .container .woocommerce,
 .palette-primary.woocommerce-page #content {
 	background: $palette-primary_3;
 }
 
 .palette-primary.mce-content-body {
-	background: $palette-primary-4 !important;
-	color: $text-contrast-palette-primary_4 !important;
+	background: $palette-primary-6 !important;
+	color: $text-contrast-palette-primary_6 !important;
 }
 .palette-primary.single .site-content main.container,
 .palette-primary.blog .site-content main.container,
 .palette-primary.archive .site-content main.container,
 .palette-primary.search .site-content main.container {
-	background: $rgba_4;
-}
-
-.palette-primary.search .jumbotron,
-.palette-primary.search .search-results .col-md-12 {
-	background: $palette-primary_3;
+	background: $rgba_6;
 }

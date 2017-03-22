@@ -4,7 +4,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Text domain.
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-lattice';
 
-	// Enable Sticky Footer.
+	// Enable sticky footer.
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
 
 	// Enable typography controls.
@@ -16,18 +16,16 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Enable template wrapper.
 	$boldgrid_framework_configs['boldgrid-parent-theme'] = true;
 
-	define('BOLDGRID_THEME_HELPER_SCSS_COMPILE', true);
-
 	// Specify the parent theme's name.
 	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
 
-	// Background. Need to change before release
-	$boldgrid_framework_configs['customizer-options']['background']['defaults']['background_image'] = false;
+	// Background.
+	$boldgrid_framework_configs['customizer-options']['background']['defaults']['background_image'] = true;
 
 	// Select the header template to use.
 	$boldgrid_framework_configs['template']['header'] = 'generic';
 
-	// Assign Locations for Generic Header.
+	// Assign locations for generic header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
 		'1' => array( '[menu]secondary' ),
 		'5' => array( '[menu]tertiary' ),
@@ -41,7 +39,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Select the footer template to use.
 	$boldgrid_framework_configs['template']['footer'] = 'generic';
 
-	// Assign Locations for Generic Footer.
+	// Assign locations for generic footer.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
 		'1' => array( '[menu]footer_center' ),
 		'11' => array( '[widget]boldgrid-widget-3', '[action]boldgrid_display_attribution_links' ),
@@ -67,56 +65,56 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			'default' => true,
 			'format' => 'palette-primary',
 			'colors' => array(
-				'#c7dfc5',
 				'#ffe5d9',
+				'#c7dfc5',
 				'#9590a8',
-				'#302f4d',
+				'#9590a8',
 				'#e5e5e5',
-				'#9590a8',
+				'#302f4d',
 			)
 		),	
 		array (
 			'format' => 'palette-primary',
 			'colors' => array(
-				'#73956f',
 				'#c95c62',
+				'#73956f',
 				'#ffffff',
-				'#f2f0ea',
+				'#ffffff',
 				'#333333',
-				'#ffffff',
+				'#f2f0ea',
 			)
 		),			
 		array (
 			'format' => 'palette-primary',
 			'colors' => array(
-				'#e5d4c0',
 				'#bfdbf7',
+				'#e5d4c0',
 				'#006e71',
+				'#006e71',
+				'#ffffff',
 				'#022b3a',
-				'#ffffff',
-				'#006e71',
 			)
 		),
 		array (
 			'format' => 'palette-primary',
 			'colors' => array(
-				'#99d5c9',
 				'#87bcde',
+				'#99d5c9',
 				'#545454',
-				'#3d3d3d',
+				'#545454',
 				'#ffffff',
-				'#545454',
+				'#3d3d3d',
 			)
 		),
 		array (
 			'format' => 'palette-primary',
 			'colors' => array(
-				'#ff331f',
 				'#d5ac4e',
+				'#ff331f',
 				'#191919',
-				'#000000',
+				'#191919',
 				'#ffffff',
-				'#191919',
+				'#000000',
 			)
 		),
 	);
