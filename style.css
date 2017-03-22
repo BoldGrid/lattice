@@ -1,0 +1,655 @@
+/*
+Theme Name: Lattice
+Author: the BoldGrid team
+Theme URI: https://www.boldgrid.com/the-team
+Author URI: https://www.boldgrid.com/the-team
+Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
+Version: 1.14
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: boldgrid-lattice
+Template: prime
+Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-421142
+*/
+
+/*------------------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+--------------------------------------------------------------------------
+# Base Styles
+	## Background
+	## Positioning
+	## Typography
+	## Titles
+	## Buttons
+	## Et Cetera
+# Header
+# Navigation
+	## Main Menu
+	## Other Menus
+	## Social Menus
+# Modules
+	## Global
+	## Alpha
+	## Beta
+# Pages
+# Posts
+# Plugins
+	## WP Canvas Gallery
+	## WooCommerce
+# Footer
+------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Base Styles
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Background
+-----------------------------------------------*/
+body,
+.custom-background {
+	overflow-x: hidden;
+}
+.entry-content {
+	margin: 0 0 20px 0;
+}
+
+/*-----------------------------------------------
+## Positioning
+-----------------------------------------------*/
+.bg-box {
+	height: 100%;
+}
+
+/*-----------------------------------------------
+## Typography
+-----------------------------------------------*/
+.menu-social li a {
+	-webkit-font-smoothing: antialiased;
+}
+a,
+a:hover,
+a:active,
+.site-footer a:hover,
+.site-footer a:focus,
+.button-primary:hover,
+.button-primary:focus,
+.button-secondary:hover,
+.button-secondary:focus,
+.ninja-forms-field.btn:hover,
+.ninja-forms-field.btn:focus,
+.woocommerce p.buttons a.button:hover,
+.entry-title a:hover,
+.entry-title a:focus,
+.site-info a:hover,
+.site-info a:focus,
+.attribution a:hover,
+.attribution a:focus {
+	text-decoration: none;
+}
+.navbar .navbar-collapse,
+#tertiary-menu,
+.attribution,
+.footer-11,
+.attribution a,
+#footer-center-items {
+	text-align: center;
+}
+.product_title {
+	text-align: left !important;
+}
+.menu-social li a {
+	text-align: right;
+}
+
+/* xs */
+.xs-center,
+.mod-img,
+.mod-img-circle,
+.p-button-primary,
+.p-button-secondary,
+.heading,
+.site-header,
+.attribution,
+.navbar-default .navbar-nav .open .dropdown-menu,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	text-align: center;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.xs-center,
+	.mod-img,
+	.mod-img-circle,
+	.gridblock .p-button-primary,
+	.gridblock .p-button-secondary,
+	.site-info,
+	.site-branding,
+	.site-info p,
+	.site-info a,
+	.attribution,
+	.attribution a,
+	.attribution,
+	.navbar-default .navbar-nav .open .dropdown-menu,
+	#secondary-menu,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		text-align: left;
+	}
+}
+
+/*-----------------------------------------------
+## Titles
+-----------------------------------------------*/
+.page-template-page_home .entry-title {
+	display: none;
+}
+.entry-title {
+	padding: 20px;
+}
+.page h1.entry-title {
+	margin-bottom: 15px;
+}
+
+/* Headings */
+article.post h1.entry-title {
+	margin-top: 0;
+}
+h1.page-title,
+p.h1.page-title {
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 20px;
+}
+.page-header {
+	margin-top: 15px;
+	padding-bottom: 0;
+}
+h2,
+h3,
+h4 {
+	text-align: center;
+}
+h2 {
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+h2.widget-title {
+	padding: 10px;
+}
+h3 {
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+h3.site-description.invisible {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+h3.site-description {
+	border-bottom: 2px solid transparent !important;
+	padding: 5px;
+}
+h4 {
+	margin-top: 30px;
+}
+.heading {
+	margin-bottom: 15px;
+}
+
+/* md */
+@media (min-width: 992px) {
+	h3.site-description {
+		text-align: left;
+	}
+}
+
+/*-----------------------------------------------
+## Buttons
+-----------------------------------------------*/
+.button-primary,
+.button-secondary,
+.ninja-forms-field.btn {
+	border: none;
+	border-radius: none;
+	padding: 7px 20px;
+	transition: all .5s;
+}
+.form-submit .submit {
+	border: medium none;
+	border-radius: 6px;
+	margin: 10px 0;
+	padding: 15px 40px;	
+	transition: all .5s;
+}
+#commentform p.form-submit {
+	padding: 0;
+}
+.pager li > a,
+.pager li > a:hover,
+.pager li > a:focus {
+	border: none;
+}
+ul.pager {
+	padding-bottom: 25px;
+}
+.widget .button-primary {
+	padding: 3px 10px;
+}
+.form-control {
+	border-radius: 0;
+}
+.form-inline .form-group {
+	margin-bottom: 8px;
+}
+
+/* Positioning */
+.p-button-primary {
+	margin: 45px 0;
+	padding: 8px 0;
+}
+
+/* Block vs. Inline */
+.button-primary,
+.button-secondary {
+	display: block;
+	margin-top: 15px;
+}
+
+/* sm */
+@media (min-width: 500px) {
+	.button-primary,
+	.button-secondary {
+		display: inline;
+		margin-top: 0;
+	}
+	.gridblock .p-button-secondary {
+		margin-top: 25px;
+	}
+}
+
+/*-----------------------------------------------
+## Et Cetera
+-----------------------------------------------*/
+.well {
+	background: transparent;	
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+input,
+select,
+textarea {
+	color: #333;
+}
+label {
+	font-weight: 400;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus,
+.table-striped > tbody > tr:nth-child(2n+1),
+.panel,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+	background: transparent;
+}
+.table-striped > tbody > tr:nth-child(2n+1) {
+	border: none;
+}
+
+hr {
+	border-width: 2px 0 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/*------------------------------------------------------------------------
+# Header
+------------------------------------------------------------------------*/
+.site-title {
+	font-weight: 700;
+}
+.site-header .boldgrid-section {
+	margin-top: 20px;
+}
+.site-header .header-1 {
+	margin-top: 15px;
+}
+.site-header .header-1,
+.site-header .header-2.header-3.header-4,
+.site-header .header-14.header-15,
+.site-header .header-5,
+.site-header .header-6.header-7,
+.site-header .header-8,
+.site-header .header-9.header-10,
+.site-header .header-11 {
+	margin-left: 0;
+	margin-right: 0;
+}
+.site-header .header-9.header-10 {
+	margin-bottom: 15px;
+}
+#header-widget-area {
+	margin-bottom: 15px;
+}
+#header-widget-area > .header-widgets-1 > .widget,
+#header-widget-area > .header-widgets-2 > .widget,
+#header-widget-area > .header-widgets-3 > .widget,
+#header-widget-area > .header-widgets-4 > .widget {
+	margin-top: 15px;
+}
+
+/*------------------------------------------------------------------------
+# Navigation
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Main Menu
+-----------------------------------------------*/
+.navbar {
+	border: none;
+	display: inline-block;
+	float: none;
+	/* Border Radius */
+	border-radius: 0;
+	background: none;
+}
+.navbar-default {
+	margin-bottom: 0;
+}
+.navbar-nav > li {
+	min-height: 55px;
+}
+.navbar-default .navbar-nav > li > a {
+	padding: 25px;
+}
+
+/* Nav hover */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background: none;
+}
+
+/* Nav active */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background: none;
+}
+
+/* Dropdown */
+.dropdown-menu {
+	border: none;
+}
+.dropdown-menu:hover {
+	margin-top: -5px;
+}
+.navbar-nav > li > .dropdown-menu {
+	margin-top: -5px;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav > .current-menu-parent > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+	background: transparent;
+}
+
+/*-----------------------------------------------
+## Other Menus
+-----------------------------------------------*/
+#secondary-menu,
+#tertiary-menu {
+	background: none;
+}
+#secondary-menu {
+	margin-top: 10px;
+}
+#secondary-menu a,
+#tertiary-menu a,
+#footer-center-menu a {
+	padding: 0 10px;
+}
+#secondary-menu li::after,
+#tertiary-menu li::after,
+#footer-center-menu li::after {
+	content: "";
+}
+
+/*-----------------------------------------------
+## Social Menus
+-----------------------------------------------*/
+.menu-social {
+	margin-top: 15px;
+}
+.menu-social ul li {
+	display: inline-block;	
+	position: relative;
+}
+.menu-social li a {
+	display: inline-block;
+	padding: 0 10px;
+}
+#primary-navbar li.menu-social a {
+	border: none;	
+	padding: 5px 8px;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.site-header .menu-social ul {
+		float: right;
+	}
+}
+
+/*------------------------------------------------------------------------
+# Modules
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Global
+-----------------------------------------------*/
+blockquote,
+.mod-blockquote {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+blockquote p,
+.mod-blockquote p {
+	padding-left: 20px;
+}
+
+/*------------------------------------------------------------------------
+# Pages
+------------------------------------------------------------------------*/
+/* Search Page */
+.jumbotron {
+	margin: 15px;
+	padding-bottom: 0;
+	padding-top: 0;
+	text-align: center;
+}
+.container .jumbotron {
+	border-radius: 0;
+}
+.jumbotron .bgtfw {
+	padding-bottom: 30px;
+}
+.search .button-primary {
+	margin: 0;
+}
+.search h1 {
+	margin-bottom: 15px;
+	margin-top: 5px;
+	padding: 20px;
+	text-align: center;
+}
+.search .search-results .row {
+	margin-bottom: 15px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 15px;
+	text-align: center;
+}
+.search-results .row .col-md-12 hr {
+	display: none;
+}
+
+/*------------------------------------------------------------------------
+# Posts
+------------------------------------------------------------------------*/
+article.post .entry-content .boldgrid-section .container,
+article.post .entry-header .container {
+	background: transparent;
+}
+ol.comment-list {
+	list-style: outside none none;
+}
+.widget-area {
+	margin-top: 25px;
+	padding: 25px;
+}
+article.post {
+	margin-top: 15px;
+	padding: 20px;
+}
+aside.sidebar {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	padding: 10px;
+}
+.blog article,
+.single article {
+	margin-bottom: 15px;
+}
+.entry-meta {
+	margin-bottom: 30px;
+}
+.nav-links {
+	text-align: center;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+
+/* Comments */
+.comment-form-comment label {
+	float: left;
+	padding-right: 15px;
+}
+.panel {
+	box-shadow: none;
+}
+.panel-default > .panel-heading,
+.panel-body,
+.panel-footer,
+.panel-default {
+	background: transparent;
+}
+.panel-footer {
+	border-top: 1px solid transparent;
+	padding: 25px;
+}
+.panel-default,
+.panel-default > .panel-heading {
+	border: none;
+}
+
+/*------------------------------------------------------------------------
+# Plugins
+------------------------------------------------------------------------*/
+.wcflexslider {
+	background: transparent !important;
+}
+
+/*-----------------------------------------------
+## WooCommerce
+-----------------------------------------------*/
+.woocommerce-page .site-content .entry-content .container .woocommerce {
+	margin-bottom: 15px;
+	padding: 15px;
+}
+.woocommerce .site-content main.container .row .col-md-9 #container #content {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	padding: 15px;	
+}
+.search.woocommerce-page #content {
+	margin: 15px;
+	padding: 15px;
+}
+.woocommerce h1.entry-title,
+.woocommerce h1.page-title {
+	background: transparent !important;
+}
+.woocommerce ul.products li.product h3 {
+	font-size: 20px;
+}
+h1.product_title {
+	font-size: 42px !important;
+}
+.woocommerce-page h2,
+.woocommerce-page h3 {
+	margin-top: 30px;
+}
+aside.sidebar h2.widget-title {
+	border-bottom: 2px solid transparent !important;
+	text-align: left;
+}
+
+/*------------------------------------------------------------------------
+# Footer
+------------------------------------------------------------------------*/
+.site-footer {
+	padding: 1em;
+}
+.site-footer .row.footer-1 {
+	margin-top: 15px;
+}
+.site-footer .row.footer-1,
+.site-footer .row.footer-11 {
+	margin-left: 0;
+	margin-right: 0;
+}
+.site-footer .row.footer-11 {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+#footer-widget-area {
+	margin-bottom: 15px;
+	padding-top: 15px;
+}
+
+#footer-center-menu {
+	padding-top: 15px;
+}
+
+/* Disabled Footer */
+.disabled-footer {
+	margin-bottom: 20px;
+}
+.disabled-footer .site-footer {
+	background: transparent;
+	height: auto;
+	padding: 15px 0;
+}
+.disabled-footer .content-area {
+	margin-bottom: 0;
+}
+
+/* xs */
+.site-info {
+	margin-top: 35px;
+}
+.attribution {
+	margin-bottom: 30px;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.attribution {
+		padding-bottom: 0;
+	}
+}
