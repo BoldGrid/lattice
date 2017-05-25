@@ -6,17 +6,14 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 /*------------------------------------------------------------------------
 # Palettes
 ------------------------------------------------------------------------*/
-
 .palette-primary {
+
 	/*-----------------------------------------------
 	## 1
 	-----------------------------------------------*/
 	.button-primary,
 	.button-secondary:hover,
 	.button-secondary:focus,
-	.ninja-forms-field.btn,
-	.form-submit .submit,
-	.ninja-forms-field.btn,
 	.pager li > a {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
@@ -32,6 +29,7 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	h4,
 	h5,
 	h6,
+	p.page-title,
 	.entry-title a,
 	.entry-title a:hover,
 	.site-title a,
@@ -45,7 +43,8 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	.widget.well caption {
 		color: $palette-primary_1;
 	}
-	hr {
+	hr,
+	#reviews #comments ol.commentlist li .comment-text {
 		border-color: $palette-primary_1;
 	}
 	article.post h1.entry-title,
@@ -105,14 +104,12 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	.button-primary:hover,
 	.button-primary:focus,
 	.button-secondary,
-	.ninja-forms-field.btn:hover,
-	.ninja-forms-field.btn:focus,
-	.form-submit .submit:hover,
-	.form-submit .submit:focus,
 	.alert-info,
 	.pager li > a:hover,
 	.pager li > a:focus,
-	.label-success {
+	.label-success,
+	mark,
+	.mark {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}	
@@ -124,8 +121,7 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	h1.page-title,
 	p.h1.page-title,
 	article.post,
-	aside.sidebar,
-	.nav-links {
+	aside.sidebar {
 		background: $palette-primary_3;
 	}
 	aside.sidebar {
@@ -156,6 +152,9 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	.site-footer .footer-11,
 	.dropdown-menu {
 		background: $palette-primary_4;
+	}
+	 #reviews #comments ol.commentlist li .meta {
+		color: $text-contrast-palette-primary_4;
 	}
 
 	/*-----------------------------------------------
@@ -198,11 +197,8 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 /*------------------------------------------------------------------------
 # Additional Body Classes
 ------------------------------------------------------------------------*/
-.palette-primary.woocommerce nav.woocommerce-pagination ul li span.current,
-.palette-primary.woocommerce nav.woocommerce-pagination ul li a:focus, 
-.palette-primary.woocommerce nav.woocommerce-pagination ul li a:hover,
 .palette-primary.woocommerce div.product .stock {
-	color: $palette-primary_2;
+	color: $palette-primary_1;
 }
 
 .palette-primary.search .jumbotron,

@@ -76,9 +76,6 @@ a:active,
 .button-primary:focus,
 .button-secondary:hover,
 .button-secondary:focus,
-.ninja-forms-field.btn:hover,
-.ninja-forms-field.btn:focus,
-.woocommerce p.buttons a.button:hover,
 .entry-title a:hover,
 .entry-title a:focus,
 .site-info a:hover,
@@ -94,9 +91,6 @@ a:active,
 .attribution a,
 #footer-center-items {
 	text-align: center;
-}
-.product_title {
-	text-align: left !important;
 }
 .menu-social li a {
 	text-align: right;
@@ -164,11 +158,6 @@ p.h1.page-title {
 	margin-top: 15px;
 	padding-bottom: 0;
 }
-h2,
-h3,
-h4 {
-	text-align: center;
-}
 h2 {
 	margin-bottom: 20px;
 	margin-top: 0;
@@ -206,8 +195,7 @@ h4 {
 ## Buttons
 -----------------------------------------------*/
 .button-primary,
-.button-secondary,
-.ninja-forms-field.btn {
+.button-secondary  {
 	border: none;
 	border-radius: none;
 	padding: 7px 20px;
@@ -289,11 +277,7 @@ hr {
 	margin-top: 10px;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus,
-.table-striped > tbody > tr:nth-child(2n+1),
-.panel,
-.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+.table-striped > tbody > tr:nth-child(2n+1) {
 	background: transparent;
 }
 .table-striped > tbody > tr:nth-child(2n+1) {
@@ -362,6 +346,8 @@ hr {
 }
 
 /* Nav hover */
+.nav > li > a:hover,
+.nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
 	background: none;
@@ -523,41 +509,33 @@ aside.sidebar {
 .entry-meta {
 	margin-bottom: 30px;
 }
-.nav-links {
-	text-align: center;
-	margin-bottom: 15px;
-	padding: 20px;
-}
 
 /* Comments */
 .comment-form-comment label {
 	float: left;
 	padding-right: 15px;
 }
-.panel {
-	box-shadow: none;
-}
+.panel,
 .panel-default > .panel-heading,
 .panel-body,
 .panel-footer,
 .panel-default {
 	background: transparent;
 }
-.panel-footer {
-	border-top: 1px solid transparent;
-	padding: 25px;
+.panel {
+	box-shadow: none;
 }
 .panel-default,
 .panel-default > .panel-heading {
 	border: none;
 }
+.panel-footer {
+	border-top: 1px solid transparent;
+}
 
 /*------------------------------------------------------------------------
 # Plugins
 ------------------------------------------------------------------------*/
-.wcflexslider {
-	background: transparent !important;
-}
 
 /*-----------------------------------------------
 ## WooCommerce
@@ -575,36 +553,14 @@ aside.sidebar {
 	margin: 15px;
 	padding: 15px;
 }
-.woocommerce h1.entry-title,
-.woocommerce h1.page-title {
-	background: transparent !important;
-}
-.woocommerce ul.products li.product h3 {
-	font-size: 20px;
-}
-h1.product_title {
-	font-size: 42px !important;
-}
-.woocommerce-page h2,
-.woocommerce-page h3 {
-	margin-top: 30px;
-}
-aside.sidebar h2.widget-title {
-	text-align: left;
-}
-.price_slider {
-	margin-top: 20px;
-}
-.woocommerce nav.woocommerce-pagination ul {
-	border: none;
-}
-.woocommerce nav.woocommerce-pagination ul li {
-	border-right: none;
-}
-.woocommerce nav.woocommerce-pagination ul li a:focus, 
-.woocommerce nav.woocommerce-pagination ul li a:hover,
-.woocommerce nav.woocommerce-pagination ul li span.current {
+.palette-primary.woocommerce h1.entry-title,
+.palette-primary.woocommerce h1.page-title {
 	background: transparent;
+}
+.palette-primary.woocommerce-page h2,
+.palette-primary.woocommerce-page h3 {
+	border-bottom: 2px solid transparent;
+	margin-top: 30px;
 }
 
 /*------------------------------------------------------------------------
