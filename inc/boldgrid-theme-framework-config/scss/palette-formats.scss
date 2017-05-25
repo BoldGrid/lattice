@@ -32,12 +32,12 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	p.page-title,
 	.entry-title a,
 	.entry-title a:hover,
+	.product .product_title,
 	.site-title a,
 	.site-title a:hover,
 	.site-title a:focus,
 	.site-description,
 	.site-footer a,
-	.attribution,
 	.attribution a,
 	.disabled-footer .site-footer a,
 	.widget.well caption {
@@ -75,9 +75,6 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	.navbar-default .navbar-toggle:hover {
 		background-color: $palette-primary_2;
 	}
-	.alert-info {
-		border-color: $palette-primary_2;
-	}
 	a:hover,
 	a:focus,
 	.navbar-default .navbar-nav > li > a:hover,
@@ -104,7 +101,6 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	.button-primary:hover,
 	.button-primary:focus,
 	.button-secondary,
-	.alert-info,
 	.pager li > a:hover,
 	.pager li > a:focus,
 	.label-success,
@@ -121,7 +117,8 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	h1.page-title,
 	p.h1.page-title,
 	article.post,
-	aside.sidebar {
+	aside.sidebar,
+	.nav-links {
 		background: $palette-primary_3;
 	}
 	aside.sidebar {
