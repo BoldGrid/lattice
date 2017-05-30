@@ -1,7 +1,7 @@
 /*
 Theme Name: Lattice
-Author: the BoldGrid team
-Theme URI: https://www.boldgrid.com/the-team
+Author: The BoldGrid Team
+Theme URI: https://www.boldgrid.com/lattice
 Author URI: https://www.boldgrid.com/the-team
 Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
 Version: 1.14
@@ -73,9 +73,6 @@ a:active {
 	text-decoration: none;
 }
 .site-header,
-.navbar .navbar-collapse,
-#tertiary-menu,
-.menu-social,
 .attribution,
 .footer-11,
 #footer-center-items {
@@ -90,7 +87,8 @@ a:active {
 .p-button-secondary,
 .heading,
 .navbar-default .navbar-nav .open .dropdown-menu,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+.menu-social, {
 	text-align: center;
 }
 
@@ -237,8 +235,6 @@ hr {
 
 .table-striped > tbody > tr:nth-child(2n+1) {
 	background: transparent;
-}
-.table-striped > tbody > tr:nth-child(2n+1) {
 	border: none;
 }
 
@@ -255,9 +251,6 @@ hr {
 	margin-top: 15px;
 }
 .site-header .header-1,
-.site-header .header-2.header-3.header-4,
-.site-header .header-14.header-15,
-.site-header .header-5,
 .site-header .header-6.header-7,
 .site-header .header-8,
 .site-header .header-9.header-10,
@@ -265,7 +258,7 @@ hr {
 	margin-left: 0;
 	margin-right: 0;
 }
-.site-header .header-9.header-10 {
+.site-header .header-11 {
 	margin-bottom: 15px;
 }
 #header-widget-area {
@@ -305,7 +298,6 @@ hr {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .current-menu-parent > a,
 .nav .open > a,
 .nav .open > a:focus,
 .nav .open > a:hover,
@@ -326,9 +318,6 @@ hr {
 #secondary-menu,
 #tertiary-menu {
 	background: none;
-}
-#secondary-menu {
-	margin-top: 10px;
 }
 #secondary-menu a,
 #tertiary-menu a,
@@ -370,8 +359,6 @@ blockquote p,
 /* Search Page */
 .jumbotron {
 	margin: 15px;
-	padding-bottom: 0;
-	padding-top: 0;
 	text-align: center;
 }
 .container .jumbotron {
@@ -380,13 +367,7 @@ blockquote p,
 .jumbotron .bgtfw {
 	padding-bottom: 30px;
 }
-.search .button-primary {
-	margin: 0;
-}
 .search h1 {
-	margin-bottom: 15px;
-	margin-top: 5px;
-	padding: 20px;
 	text-align: center;
 }
 .search .search-results .row {
@@ -502,7 +483,7 @@ aside.sidebar {
 }
 .site-footer .row.footer-11 {
 	margin-bottom: 15px;
-	padding-bottom: 15px;
+	padding: 15px;
 }
 #footer-widget-area {
 	margin-bottom: 15px;

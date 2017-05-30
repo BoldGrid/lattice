@@ -27,13 +27,13 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Assign locations for generic header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
-		'1' => array( '[menu]secondary' ),
-		'5' => array( '[menu]tertiary' ),
+		'1' => array( '[menu]tertiary' ),
 		'6' => array( '[action]boldgrid_site_identity' ),
 		'7' => array( '[menu]social' ),
 		'8' => array( '[action]boldgrid_primary_navigation' ),
 		'9' => array( '[widget]boldgrid-widget-1' ),
 		'10' => array( '[widget]boldgrid-widget-2' ),
+		'11' => array( '[menu]secondary' ),
 	);
 
 	// Select the footer template to use.
