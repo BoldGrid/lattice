@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------------
 # Variables
 ------------------------------------------------------------------------*/
-$rgba_6 : rgba($palette-primary_6, 0.8);
+$rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 
 /*------------------------------------------------------------------------
 # Palettes
@@ -74,7 +74,7 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	a:hover,
 	a:focus,
 	.navbar-default .navbar-nav > li > a:hover,
-	.navbar-default .navbar-nav > li > a:focus,	
+	.navbar-default .navbar-nav > li > a:focus,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 	.navbar-default .navbar-nav > .current-menu-item > a,
@@ -178,18 +178,14 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	body,
 	p,
 	.site-content,
-	.jumbotron  {
-		color: $text-contrast-palette-primary_6;
+	.jumbotron {
+		color: $text-contrast-palette-primary-neutral-color;
 	}
 }
 
 /*------------------------------------------------------------------------
 # Additional Body Classes
 ------------------------------------------------------------------------*/
-.palette-primary.woocommerce div.product .stock {
-	color: $palette-primary_1;
-}
-
 .palette-primary.search .jumbotron,
 .palette-primary.search .search-results .col-md-12 {
 	background: $palette-primary_3;
@@ -199,10 +195,6 @@ $rgba_6 : rgba($palette-primary_6, 0.8);
 	background: $palette-primary_3;
 }
 
-.palette-primary.mce-content-body {
-	background: $palette-primary-6 !important;
-	color: $text-contrast-palette-primary_6 !important;
-}
 .palette-primary.single .site-content main.container,
 .palette-primary.blog .site-content main.container,
 .palette-primary.archive .site-content main.container,

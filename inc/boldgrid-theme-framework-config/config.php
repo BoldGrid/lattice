@@ -22,9 +22,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Background.
 	$boldgrid_framework_configs['customizer-options']['background']['defaults']['background_image'] = true;
 
-	// Select the header template to use.
-	$boldgrid_framework_configs['template']['header'] = 'generic';
-
 	// Assign locations for generic header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
 		'1' => array( '[menu]tertiary' ),
@@ -35,9 +32,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'10' => array( '[widget]boldgrid-widget-2' ),
 		'11' => array( '[menu]secondary' ),
 	);
-
-	// Select the footer template to use.
-	$boldgrid_framework_configs['template']['footer'] = 'generic';
 
 	// Assign locations for generic footer.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
@@ -64,57 +58,57 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		array (
 			'default' => true,
 			'format' => 'palette-primary',
+			'neutral-color' => '#302f4d',
 			'colors' => array(
 				'#ffe5d9',
 				'#c7dfc5',
 				'#9590a8',
 				'#9590a8',
 				'#e5e5e5',
-				'#302f4d',
 			)
 		),	
 		array (
 			'format' => 'palette-primary',
+			'neutral-color' => '#f2f0ea',
 			'colors' => array(
 				'#c95c62',
 				'#73956f',
 				'#ffffff',
 				'#ffffff',
 				'#333333',
-				'#f2f0ea',
 			)
 		),			
 		array (
 			'format' => 'palette-primary',
+			'neutral-color' => '#022b3a',
 			'colors' => array(
 				'#bfdbf7',
 				'#e5d4c0',
 				'#006e71',
 				'#006e71',
 				'#ffffff',
-				'#022b3a',
 			)
 		),
 		array (
 			'format' => 'palette-primary',
+			'neutral-color' => '#3d3d3d',
 			'colors' => array(
 				'#87bcde',
 				'#99d5c9',
 				'#545454',
 				'#545454',
 				'#ffffff',
-				'#3d3d3d',
 			)
 		),
 		array (
 			'format' => 'palette-primary',
+			'neutral-color' => '#000000',
 			'colors' => array(
 				'#d5ac4e',
 				'#ff331f',
 				'#191919',
 				'#191919',
 				'#ffffff',
-				'#000000',
 			)
 		),
 	);

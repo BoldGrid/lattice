@@ -64,9 +64,6 @@ body,
 /*-----------------------------------------------
 ## Typography
 -----------------------------------------------*/
-.menu-social li a {
-	-webkit-font-smoothing: antialiased;
-}
 a,
 a:hover,
 a:active {
@@ -88,7 +85,7 @@ a:active {
 .heading,
 .navbar-default .navbar-nav .open .dropdown-menu,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a,
-.menu-social, {
+.menu-social {
 	text-align: center;
 }
 
@@ -159,9 +156,6 @@ h3.site-description {
 	border-bottom: 2px solid transparent !important;
 	padding: 5px;
 }
-h4 {
-	margin-top: 30px;
-}
 .heading {
 	margin-bottom: 15px;
 }
@@ -212,7 +206,7 @@ h4 {
 ## Et Cetera
 -----------------------------------------------*/
 .well {
-	background: transparent;	
+	background: transparent;
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
@@ -494,16 +488,10 @@ aside.sidebar {
 }
 
 /* Disabled Footer */
-.disabled-footer {
-	margin-bottom: 20px;
-}
 .disabled-footer .site-footer {
 	background: transparent;
 	height: auto;
 	padding: 15px 0;
-}
-.disabled-footer .content-area {
-	margin-bottom: 0;
 }
 
 /* xs */
