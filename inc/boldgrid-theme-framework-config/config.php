@@ -3,6 +3,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Text domain.
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-lattice';
+	define( 'BOLDGRID_THEME_HELPER_SCSS_COMPILE', true );
 
 	// Enable sticky footer.
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
@@ -24,50 +25,41 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Assign locations for generic header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
-		'1' => array( '[menu]tertiary' ),
+		'1' => array( '[menu]secondary' ),
+		'5' => array( '[menu]tertiary' ),
 		'6' => array( '[action]boldgrid_site_identity' ),
 		'7' => array( '[menu]social' ),
 		'8' => array( '[action]boldgrid_primary_navigation' ),
 		'9' => array( '[widget]boldgrid-widget-1' ),
 		'10' => array( '[widget]boldgrid-widget-2' ),
-		'11' => array( '[menu]secondary' ),
 	);
 
 	// Assign locations for generic footer.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
 		'1' => array( '[menu]footer_center' ),
-		'11' => array( '[widget]boldgrid-widget-3', '[action]boldgrid_display_attribution_links' ),
+		'8' => array( '[widget]boldgrid-widget-3' , '[action]boldgrid_display_contact_block' ),
+		'11' => array( '[action]boldgrid_display_attribution_links' ),
 	);
 
 	// Menu Locations.
-	$boldgrid_framework_configs['menu']['locations']['primary'] = "Main Menu";
-	$boldgrid_framework_configs['menu']['locations']['social'] = 'Right of Site Title';
-	$boldgrid_framework_configs['menu']['locations']['secondary'] = 'Above Site Title - Left';
-	$boldgrid_framework_configs['menu']['locations']['tertiary'] = 'Above Site Title - Center';
-	$boldgrid_framework_configs['menu']['locations']['footer_center'] = 'Footer Center';
+	$boldgrid_framework_configs['menu']['locations'] = array(
+		'primary' => 'Primary Menu',
+		'secondary' => 'Header Top Left',
+		'tertiary' => 'Header Top Center',
+		'social' => 'Header Right',
+		'footer_center' => 'Footer Center',
+	);
 
 	// Name Widget Areas.
-	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Below Site Title - Left';
-	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Below Site Title - Right';
+	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Header Left';
+	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Header Right';
 
-	/**
-	 * Customizer Configs
-	 */
+
+	 // Customizer Configs
 	$boldgrid_framework_configs['customizer-options']['colors']['enabled'] = true;
 	$boldgrid_framework_configs['customizer-options']['colors']['defaults'] = array (
 		array (
 			'default' => true,
-			'format' => 'palette-primary',
-			'neutral-color' => '#302f4d',
-			'colors' => array(
-				'#ffe5d9',
-				'#c7dfc5',
-				'#9590a8',
-				'#9590a8',
-				'#e5e5e5',
-			)
-		),	
-		array (
 			'format' => 'palette-primary',
 			'neutral-color' => '#f2f0ea',
 			'colors' => array(
@@ -76,8 +68,19 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#ffffff',
 				'#ffffff',
 				'#333333',
-			)
-		),			
+			),
+		),	
+		array (
+			'format' => 'palette-primary',
+			'neutral-color' => '#302f4d',
+			'colors' => array(
+				'#ffe5d9',
+				'#c7dfc5',
+				'#9590a8',
+				'#9590a8',
+				'#e5e5e5',
+			),
+		),
 		array (
 			'format' => 'palette-primary',
 			'neutral-color' => '#022b3a',
@@ -87,7 +90,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#006e71',
 				'#006e71',
 				'#ffffff',
-			)
+			),
 		),
 		array (
 			'format' => 'palette-primary',
@@ -98,7 +101,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#545454',
 				'#545454',
 				'#ffffff',
-			)
+			),
 		),
 		array (
 			'format' => 'palette-primary',
@@ -109,9 +112,42 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#191919',
 				'#191919',
 				'#ffffff',
-			)
+			),
 		),
 	);
+
+	// Override customizer options per subcategory.
+	switch ( $boldgrid_framework_configs['inspiration']['subcategory_key'] ) {
+		case 'Fitness':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			break;
+		case 'Real Estate':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			break;
+		case 'Consulting':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][2]['default'] = true;
+			break;
+		case 'Marketing':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][2]['default'] = true;
+			break;
+		case 'Design':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][3]['default'] = true;
+			break;
+		case 'Photography':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][3]['default'] = true;
+			break;
+		case 'Music':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][4]['default'] = true;
+			break;
+		case 'Restaurant':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][4]['default'] = true;
+			break;
+
+	// Default
+		default:
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			break;
+	}
 
 	// Text Contrast Colors.
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
@@ -149,14 +185,13 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 }
 add_filter( 'boldgrid_theme_framework_config', 'boldgrid_theme_framework_config' );
 
-/**
- * Site Title & Logo Controls
- */
+
+// Site Title & Logo Controls
 function filter_logo_controls( $controls ) {
 	$controls['logo_font_family']['default'] = 'Julius Sans One';
 	$controls['logo_font_size']['default'] = 50;
-	$controls['logo_margin_top']['default'] = 20;
-	$controls['logo_margin_bottom']['default'] = 0;
+	$controls['logo_margin_top']['default'] = 5;
+	$controls['logo_margin_bottom']['default'] = 10;
 	$controls['logo_margin_left']['default'] = 0;
 	$controls['logo_line_height']['default'] = 100;
 	$controls['logo_letter_spacing']['default'] = 1;

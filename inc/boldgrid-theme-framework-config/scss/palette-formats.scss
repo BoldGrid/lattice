@@ -18,6 +18,9 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
+	#primary-navbar ul > li:last-child {
+		border: 2px solid $palette-primary_1;
+	}
 	.navbar-default .navbar-toggle {
 		background: $palette-primary_1;
 	}	
@@ -102,7 +105,10 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 	.mark {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
-	}	
+	}
+	#primary-navbar ul > li:last-child:hover {
+		border: 2px solid $palette-primary_2;
+	}
 
 	/*-----------------------------------------------
 	## 3
@@ -138,6 +144,7 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 	#footer-widget-area > .footer-widgets-4 > .widget,
 	.navbar-default .navbar-toggle .icon-bar,
 	.site-footer .footer-1,
+	.site-footer .footer-8,
 	.site-footer .footer-11,
 	.dropdown-menu {
 		background: $palette-primary_4;

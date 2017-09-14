@@ -70,7 +70,8 @@ a:active {
 	text-decoration: none;
 }
 .site-header,
-.attribution,
+h1.entry-title,
+.footer-8,
 .footer-11,
 #footer-center-items {
 	text-align: center;
@@ -172,8 +173,6 @@ h3.site-description {
 -----------------------------------------------*/
 .button-primary,
 .button-secondary {
-	border: none;
-	border-radius: none;
 	padding: 7px 20px;
 	transition: all .5s;
 }
@@ -205,6 +204,9 @@ h3.site-description {
 /*-----------------------------------------------
 ## Et Cetera
 -----------------------------------------------*/
+p {
+	margin: 0 0 20px;
+}
 .well {
 	background: transparent;
 	border: none;
@@ -213,18 +215,12 @@ h3.site-description {
 	margin-bottom: 0;
 	padding: 10px;
 }
-input,
-select,
-textarea {
-	color: #333;
-}
 label {
 	font-weight: 400;
 }
 hr {
 	border-width: 2px 0 0;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin: 10px 0;
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) {
@@ -245,14 +241,14 @@ hr {
 	margin-top: 15px;
 }
 .site-header .header-1,
+.site-header .header-5,
 .site-header .header-6.header-7,
 .site-header .header-8,
-.site-header .header-9.header-10,
-.site-header .header-11 {
+.site-header .header-9.header-10 {
 	margin-left: 0;
 	margin-right: 0;
 }
-.site-header .header-11 {
+.site-header .header-9.header-10 {
 	margin-bottom: 15px;
 }
 #header-widget-area {
@@ -282,7 +278,7 @@ hr {
 	margin-bottom: 0;
 }
 .navbar-default .navbar-nav > li > a {
-	padding: 25px;
+	padding: 7px 20px;
 }
 
 .nav > li > a:hover,
@@ -382,10 +378,6 @@ article.post .entry-header .container {
 ol.comment-list {
 	list-style: outside none none;
 }
-.widget-area {
-	margin-top: 25px;
-	padding: 25px;
-}
 article.post {
 	margin-top: 15px;
 	padding: 20px;
@@ -471,6 +463,7 @@ aside.sidebar {
 	margin-top: 15px;
 }
 .site-footer .row.footer-1,
+.site-footer .row.footer-8,
 .site-footer .row.footer-11 {
 	margin-left: 0;
 	margin-right: 0;
@@ -492,19 +485,4 @@ aside.sidebar {
 	background: transparent;
 	height: auto;
 	padding: 15px 0;
-}
-
-/* xs */
-.site-info {
-	margin-top: 35px;
-}
-.attribution {
-	margin-bottom: 30px;
-}
-
-/* md */
-@media (min-width: 992px) {
-	.attribution {
-		padding-bottom: 0;
-	}
 }
