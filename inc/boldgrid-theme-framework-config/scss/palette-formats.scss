@@ -133,7 +133,6 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 	.site-header .header-6.header-7,
 	.site-header .header-8,
 	.site-header .header-9.header-10,
-	.site-header .header-11,
 	#header-widget-area > .header-widgets-1 > .widget,
 	#header-widget-area > .header-widgets-2 > .widget,
 	#header-widget-area > .header-widgets-3 > .widget,
@@ -194,11 +193,9 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 # Additional Body Classes
 ------------------------------------------------------------------------*/
 .palette-primary.search .jumbotron,
-.palette-primary.search .search-results .col-md-12 {
-	background: $palette-primary_3;
-}
-.palette-primary.woocommerce-page .container .woocommerce,
-.palette-primary.woocommerce-page #content {
+.palette-primary.search .search-results .col-md-12,
+.woocommerce .site-content main.container .row .col-md-9 #container #content,
+.woocommerce-page .site-content .entry-content .container .woocommerce {
 	background: $palette-primary_3;
 }
 

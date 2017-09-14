@@ -29,12 +29,9 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Social Menus
 # Modules
 	## Global
-	## Alpha
-	## Beta
 # Pages
 # Posts
 # Plugins
-	## WP Canvas Gallery
 	## WooCommerce
 # Footer
 ------------------------------------------------------------------------*/
@@ -46,12 +43,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
-body,
-.custom-background {
-	overflow-x: hidden;
-}
 .entry-content {
-	margin: 0 0 20px 0;
+	margin: 0 0 20px;
 }
 
 /*-----------------------------------------------
@@ -59,6 +52,26 @@ body,
 -----------------------------------------------*/
 .bg-box {
 	height: 100%;
+}
+
+.site-header .header-1,
+.site-footer .row.footer-1 {
+	margin: 15px 0 auto;
+}
+.site-header .header-5,
+.site-header .header-6.header-7,
+.site-header .header-8,
+.site-footer .row.footer-8,
+.site-footer .row.footer-11 {
+	margin: auto 0;
+}
+.bgtfw.search-results,
+.site-header .header-9.header-10,
+.site-footer .row.footer-11 {
+	margin: auto 0 15px;
+}
+.jumbotron {
+	margin: 15px auto;
 }
 
 /*-----------------------------------------------
@@ -69,24 +82,40 @@ a:hover,
 a:active {
 	text-decoration: none;
 }
+
+label {
+	font-weight: 400;
+}
+.site-title {
+	font-weight: 700;
+}
+
+h2 {
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+h2.widget-title {
+	padding: 10px;
+}
+h3 {
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
 .site-header,
 h1.entry-title,
 .footer-8,
 .footer-11,
-#footer-center-items {
-	text-align: center;
-}
-
-/* xs */
+#footer-center-items,
 .xs-center,
 .mod-img,
 .mod-img-circle,
-.p-button-primary,
-.p-button-secondary,
-.heading,
 .navbar-default .navbar-nav .open .dropdown-menu,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a,
-.menu-social {
+.menu-social,
+.search .search-results .row,
+.jumbotron,
+p.h1.page-title {
 	text-align: center;
 }
 
@@ -95,15 +124,11 @@ h1.entry-title,
 	.xs-center,
 	.mod-img,
 	.mod-img-circle,
-	.p-button-primary,
-	.p-button-secondary,
-	.site-info,
 	.site-branding,
-	.site-info p,
-	.site-info a,
 	.navbar-default .navbar-nav .open .dropdown-menu,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
 	#secondary-menu,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	h3.site-description {
 		text-align: left;
 	}
 	.menu-social {
@@ -117,55 +142,19 @@ h1.entry-title,
 .page-template-page_home .entry-title {
 	display: none;
 }
-.entry-title {
+.entry-title,
+p.h1.page-title {
 	padding: 20px;
 }
 .page h1.entry-title {
 	margin-bottom: 15px;
 }
-
-/* Headings */
 article.post h1.entry-title {
 	margin-top: 0;
-}
-h1.page-title,
-p.h1.page-title {
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 20px;
 }
 .page-header {
 	margin-top: 15px;
 	padding-bottom: 0;
-}
-h2 {
-	margin-bottom: 20px;
-	margin-top: 0;
-}
-h2.widget-title {
-	padding: 10px;
-}
-h3 {
-	margin-bottom: 5px;
-	margin-top: 10px;
-}
-h3.site-description.invisible {
-	margin-bottom: 0;
-	margin-top: 0;
-}
-h3.site-description {
-	border-bottom: 2px solid transparent !important;
-	padding: 5px;
-}
-.heading {
-	margin-bottom: 15px;
-}
-
-/* md */
-@media (min-width: 992px) {
-	h3.site-description {
-		text-align: left;
-	}
 }
 
 /*-----------------------------------------------
@@ -180,9 +169,6 @@ h3.site-description {
 .pager li > a:hover,
 .pager li > a:focus {
 	border: none;
-}
-.widget .button-primary {
-	padding: 3px 10px;
 }
 
 /* Block vs. Inline */
@@ -215,14 +201,10 @@ p {
 	margin-bottom: 0;
 	padding: 10px;
 }
-label {
-	font-weight: 400;
-}
 hr {
 	border-width: 2px 0 0;
 	margin: 10px 0;
 }
-
 .table-striped > tbody > tr:nth-child(2n+1) {
 	background: transparent;
 	border: none;
@@ -231,25 +213,8 @@ hr {
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
-.site-title {
-	font-weight: 700;
-}
 .site-header .boldgrid-section {
 	margin-top: 20px;
-}
-.site-header .header-1 {
-	margin-top: 15px;
-}
-.site-header .header-1,
-.site-header .header-5,
-.site-header .header-6.header-7,
-.site-header .header-8,
-.site-header .header-9.header-10 {
-	margin-left: 0;
-	margin-right: 0;
-}
-.site-header .header-9.header-10 {
-	margin-bottom: 15px;
 }
 #header-widget-area {
 	margin-bottom: 15px;
@@ -280,7 +245,6 @@ hr {
 .navbar-default .navbar-nav > li > a {
 	padding: 7px 20px;
 }
-
 .nav > li > a:hover,
 .nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
@@ -305,10 +269,6 @@ hr {
 /*-----------------------------------------------
 ## Other Menus
 -----------------------------------------------*/
-#secondary-menu,
-#tertiary-menu {
-	background: none;
-}
 #secondary-menu a,
 #tertiary-menu a,
 #footer-center-menu a {
@@ -347,22 +307,11 @@ blockquote p,
 # Pages
 ------------------------------------------------------------------------*/
 /* Search Page */
-.jumbotron {
-	margin: 15px;
-	text-align: center;
-}
 .container .jumbotron {
 	border-radius: 0;
 }
 .jumbotron .bgtfw {
 	padding-bottom: 30px;
-}
-.search h1 {
-	text-align: center;
-}
-.search .search-results .row {
-	margin: 15px 0;
-	text-align: center;
 }
 .search-results .row .col-md-12 hr {
 	display: none;
@@ -375,30 +324,20 @@ article.post .entry-content .boldgrid-section .container,
 article.post .entry-header .container {
 	background: transparent;
 }
-ol.comment-list {
-	list-style: outside none none;
-}
 article.post {
 	margin-top: 15px;
 	padding: 20px;
 }
-aside.sidebar {
-	margin-bottom: 15px;
-	margin-top: 15px;
-	padding: 10px;
+.search h1,
+.entry-meta {
+	margin-bottom: 30px;
 }
 .blog article,
 .single article {
 	margin-bottom: 15px;
 }
-.entry-meta {
-	margin-bottom: 30px;
-}
-
-/* Comments */
-.comment-form-comment label {
-	float: left;
-	padding-right: 15px;
+.search article {
+	margin-bottom: 50px;
 }
 .panel,
 .panel-default > .panel-heading,
@@ -417,10 +356,13 @@ aside.sidebar {
 .panel-footer {
 	border-top: 1px solid transparent;
 }
-.nav-links {
-	text-align: center;
-	margin-bottom: 15px;
-	padding: 20px;
+aside.sidebar {
+	margin: 15px 0;
+}
+.nav-links,
+.sidebar > aside,
+.sidebar .empty-sidebar-message {
+	padding: 10px;
 }
 
 /*------------------------------------------------------------------------
@@ -430,14 +372,13 @@ aside.sidebar {
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-.woocommerce-page .site-content .entry-content .container .woocommerce {
+.woocommerce-page .site-content .entry-content .container .woocommerce,
+.woocommerce .site-content main.container .row .col-md-9 #container #content {
 	margin-bottom: 15px;
 	padding: 15px;
 }
 .woocommerce .site-content main.container .row .col-md-9 #container #content {
-	margin-bottom: 15px;
 	margin-top: 15px;
-	padding: 15px;	
 }
 .search.woocommerce-page #content {
 	margin: 15px;
@@ -447,8 +388,7 @@ aside.sidebar {
 .palette-primary.woocommerce h1.page-title {
 	background: transparent;
 }
-.palette-primary.woocommerce-page h2,
-.palette-primary.woocommerce-page h3 {
+.palette-primary.woocommerce-page h2 {
 	border-bottom: 2px solid transparent;
 	margin-top: 30px;
 }
@@ -457,20 +397,7 @@ aside.sidebar {
 # Footer
 ------------------------------------------------------------------------*/
 .site-footer {
-	padding: 1em;
-}
-.site-footer .row.footer-1 {
-	margin-top: 15px;
-}
-.site-footer .row.footer-1,
-.site-footer .row.footer-8,
-.site-footer .row.footer-11 {
-	margin-left: 0;
-	margin-right: 0;
-}
-.site-footer .row.footer-11 {
-	margin-bottom: 15px;
-	padding: 15px;
+	padding: 20px;
 }
 #footer-widget-area {
 	margin-bottom: 15px;
