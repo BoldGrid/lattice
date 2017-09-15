@@ -18,9 +18,6 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	#primary-navbar ul > li:last-child {
-		border: 2px solid $palette-primary_1;
-	}
 	.navbar-default .navbar-toggle {
 		background: $palette-primary_1;
 	}	
@@ -29,7 +26,7 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 	.link-secondary:focus,
 	.widget.well a,
 	h1,
-	h2,	
+	h2,
 	h3,
 	h4,
 	h5,
@@ -41,7 +38,7 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 	.site-title a:focus,
 	.site-description,
 	.disabled-footer .site-footer a,
-	.widget.well caption {
+	.widget caption {
 		color: $palette-primary_1;
 	}
 	.navbar-default .navbar-toggle,
@@ -65,46 +62,30 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 	.mod-blockquote,
 	blockquote {
 		border-left: 4px solid $palette-primary_1;
-	}	
+	}
 
 	/*-----------------------------------------------
 	## 2
 	-----------------------------------------------*/
+	.button-primary:hover,
+	.button-primary:focus,
+	.button-secondary,
+	.pager li > a:hover,
+	.pager li > a:focus,
+	mark,
+	.mark {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
 	.navbar-default .navbar-toggle:focus,
 	.navbar-default .navbar-toggle:hover {
 		background-color: $palette-primary_2;
 	}
 	a:hover,
 	a:focus,
-	.navbar-default .navbar-nav > li > a:hover,
-	.navbar-default .navbar-nav > li > a:focus,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
-	.navbar-default .navbar-nav > .current-menu-item > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
-	.secondary-menu li a:hover,
-	.secondary-menu .current_page_item a,
-	.tertiary-menu li a:hover,
-	.tertiary-menu .current_page_item a,
-	.footer-center-menu li a:hover,
-	.footer-center-menu .current_page_item a,
-	.menu-social .current_page_item a,
 	.widget.well a:hover,
 	.link-secondary {
 		color: $palette-primary_2;
-	}
-	.button-primary:hover,
-	.button-primary:focus,
-	.button-secondary,
-	.pager li > a:hover,
-	.pager li > a:focus,
-	.label-success,
-	mark,
-	.mark {
-		background: $palette-primary_2;
-		color: $text-contrast-palette-primary_2;
 	}
 	#primary-navbar ul > li:last-child:hover {
 		border: 2px solid $palette-primary_2;
@@ -158,11 +139,6 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 	.site-header,
 	.site-header p,
 	.widget.well,
-	.navbar-default .navbar-nav > li > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
-	.secondary-menu li a,
-	.tertiary-menu li a,
-	.footer-center-items li a,
 	.site-footer,
 	.site-footer p {
 		color: $palette-primary_5;
@@ -182,10 +158,47 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 		background-color: $rgba_6;
 	}
 	body,
-	p,
 	.site-content,
 	.jumbotron {
 		color: $text-contrast-palette-primary-neutral-color;
+	}
+
+	/*-----------------------------------------------
+	## Menus
+	-----------------------------------------------*/
+	.navbar-default .navbar-nav > li > a,
+	li.menu-item > a,
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
+	.navbar-default .navbar-nav > .open > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: $palette-primary_5;
+	}
+	li.menu-item.menu-social > a {
+		color: $palette-primary_1;
+	}
+	li.menu-item > a:hover,
+	li.menu-item.menu-social > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: $palette-primary_2;
+	}
+	#primary-navbar ul#menu-primary > li:last-child > a {
+		border: 2px solid $palette-primary_2;
+		color: $palette-primary_2;
+	}
+	#primary-navbar ul#menu-primary > li:last-child > a:hover {
+		border: 2px solid $palette-primary_1;
+		color: $palette-primary_1;
+	}
+	#primary-navbar,
+	#secondary-menu,
+	#tertiary-menu,
+	#menu-social-items,
+	#footer-center-menu {
+		.current-menu-item a {
+			color: $palette-primary_2;
+		}
 	}
 }
 

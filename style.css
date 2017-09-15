@@ -112,7 +112,7 @@ h1.entry-title,
 .mod-img-circle,
 .navbar-default .navbar-nav .open .dropdown-menu,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a,
-.menu-social,
+.header .menu-social,
 .search .search-results .row,
 .jumbotron,
 p.h1.page-title {
@@ -131,7 +131,7 @@ p.h1.page-title {
 	h3.site-description {
 		text-align: left;
 	}
-	.menu-social {
+	.header .menu-social {
 		text-align: right;
 	}
 }
@@ -205,9 +205,29 @@ hr {
 	border-width: 2px 0 0;
 	margin: 10px 0;
 }
+
+/* Widgets and Sidebar */
+#header-widget-area,
+#footer-widget-area {
+	margin-bottom: 15px;
+}
+#header-widget-area > .header-widgets-1 > .widget,
+#header-widget-area > .header-widgets-2 > .widget,
+#header-widget-area > .header-widgets-3 > .widget,
+#header-widget-area > .header-widgets-4 > .widget,
+#footer-widget-area > .footer-widgets-1 > .widget,
+#footer-widget-area > .footer-widgets-2 > .widget,
+#footer-widget-area > .footer-widgets-3 > .widget,
+#footer-widget-area > .footer-widgets-4 > .widget {
+	margin: 15px auto;
+}
 .table-striped > tbody > tr:nth-child(2n+1) {
 	background: transparent;
 	border: none;
+}
+.sidebar > aside,
+.sidebar .empty-sidebar-message {
+	padding: 10px;
 }
 
 /*------------------------------------------------------------------------
@@ -215,15 +235,6 @@ hr {
 ------------------------------------------------------------------------*/
 .site-header .boldgrid-section {
 	margin-top: 20px;
-}
-#header-widget-area {
-	margin-bottom: 15px;
-}
-#header-widget-area > .header-widgets-1 > .widget,
-#header-widget-area > .header-widgets-2 > .widget,
-#header-widget-area > .header-widgets-3 > .widget,
-#header-widget-area > .header-widgets-4 > .widget {
-	margin-top: 15px;
 }
 
 /*------------------------------------------------------------------------
@@ -236,7 +247,6 @@ hr {
 .navbar {
 	border: none;
 	display: inline-block;
-	float: none;
 	background: none;
 }
 .navbar-default {
@@ -245,19 +255,19 @@ hr {
 .navbar-default .navbar-nav > li > a {
 	padding: 7px 20px;
 }
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover,
 .nav > li > a:hover,
 .nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus,
-.nav .open > a,
-.nav .open > a:focus,
-.nav .open > a:hover,
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
@@ -299,7 +309,7 @@ hr {
 ## Global
 -----------------------------------------------*/
 blockquote p,
-.mod-blockquote p {
+.mod-blockquote {
 	padding-left: 20px;
 }
 
@@ -359,9 +369,7 @@ article.post {
 aside.sidebar {
 	margin: 15px 0;
 }
-.nav-links,
-.sidebar > aside,
-.sidebar .empty-sidebar-message {
+.nav-links {
 	padding: 10px;
 }
 
@@ -372,6 +380,20 @@ aside.sidebar {
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
+.palette-primary.woocommerce h1.entry-title,
+.palette-primary.woocommerce h1.page-title {
+	background: transparent;
+	text-align: left;
+}
+.palette-primary.woocommerce-page .entry-content h2 {
+	border-bottom: 2px solid transparent;
+	margin-top: 30px;
+}
+.palette-primary.woocommerce-page .woocommerce-loop-product__title {
+	border-bottom: none;
+}
+
+/* Positioning */
 .woocommerce-page .site-content .entry-content .container .woocommerce,
 .woocommerce .site-content main.container .row .col-md-9 #container #content {
 	margin-bottom: 15px;
@@ -384,24 +406,12 @@ aside.sidebar {
 	margin: 15px;
 	padding: 15px;
 }
-.palette-primary.woocommerce h1.entry-title,
-.palette-primary.woocommerce h1.page-title {
-	background: transparent;
-}
-.palette-primary.woocommerce-page h2 {
-	border-bottom: 2px solid transparent;
-	margin-top: 30px;
-}
 
 /*------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------*/
 .site-footer {
 	padding: 20px;
-}
-#footer-widget-area {
-	margin-bottom: 15px;
-	padding-top: 15px;
 }
 #footer-center-menu {
 	padding-top: 15px;
@@ -411,5 +421,7 @@ aside.sidebar {
 .disabled-footer .site-footer {
 	background: transparent;
 	height: auto;
-	padding: 15px 0;
+}
+.disabled-footer .site-footer .boldgrid-section .container {
+	display: none;
 }
