@@ -3,7 +3,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Text domain.
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-lattice';
-	define( 'BOLDGRID_THEME_HELPER_SCSS_COMPILE', true );
 
 	// Enable sticky footer.
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;

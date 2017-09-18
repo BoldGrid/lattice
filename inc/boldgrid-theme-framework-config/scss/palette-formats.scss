@@ -87,9 +87,6 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 	.link-secondary {
 		color: $palette-primary_2;
 	}
-	#primary-navbar ul > li:last-child:hover {
-		border: 2px solid $palette-primary_2;
-	}
 
 	/*-----------------------------------------------
 	## 3
@@ -190,7 +187,7 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 	#primary-navbar ul#menu-primary > li:last-child > a:hover {
 		border: 2px solid $palette-primary_1;
 		color: $palette-primary_1;
-	}
+	}	
 	#primary-navbar,
 	#secondary-menu,
 	#tertiary-menu,
@@ -207,6 +204,7 @@ $rgba_6 : rgba($palette-primary-neutral-color, 0.8);
 ------------------------------------------------------------------------*/
 .palette-primary.search .jumbotron,
 .palette-primary.search .search-results .col-md-12,
+.palette-primary.bg_attribution-template-default .entry-content,
 .woocommerce .site-content main.container .row .col-md-9 #container #content,
 .woocommerce-page .site-content .entry-content .container .woocommerce {
 	background: $palette-primary_3;

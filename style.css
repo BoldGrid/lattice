@@ -90,6 +90,9 @@ label {
 	font-weight: 700;
 }
 
+h1.entry-title {
+	margin-top: 15px;
+}
 h2 {
 	margin-bottom: 20px;
 	margin-top: 0;
@@ -327,6 +330,14 @@ blockquote p,
 	display: none;
 }
 
+/* Attribution Page */
+.palette-primary.bg_attribution-template-default .entry-header .container {
+	background: transparent;
+}
+.palette-primary.bg_attribution-template-default .entry-content {
+	padding: 15px;
+}
+
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
@@ -421,7 +432,4 @@ aside.sidebar {
 .disabled-footer .site-footer {
 	background: transparent;
 	height: auto;
-}
-.disabled-footer .site-footer .boldgrid-section .container {
-	display: none;
 }
