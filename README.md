@@ -1,8 +1,8 @@
 # Lattice
 - Contributors: 
-- Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-30
+- Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-49
 - Requires at least: 4.3
-- Tested up to: 4.7.5
+- Tested up to: 4.8.2
 - License: GNU General Public License v2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
