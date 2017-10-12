@@ -19,9 +19,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Specify the parent theme's name.
 	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
 
-	// Background.
-	$boldgrid_framework_configs['customizer-options']['background']['defaults']['background_image'] = true;
-
 	// Assign locations for generic header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
 		'1' => array( '[menu]secondary' ),
